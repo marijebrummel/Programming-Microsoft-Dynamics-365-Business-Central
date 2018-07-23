@@ -1,7 +1,5 @@
 table 50100 "Radio Show"
 {
-    DataClassification = ToBeClassified;
-    
     fields
     {
         field(1;"No."; Code[20]) {}
@@ -14,6 +12,5 @@ table 50100 "Radio Show"
         field(110;"Audience Share"; Decimal) {}
         field(120;"Advertising Revenue"; Decimal) {}
         field(130;"Royalty Cost"; Decimal) {}
-    }
-       
+    } 
 }
