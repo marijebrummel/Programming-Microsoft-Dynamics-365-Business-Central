@@ -13,18 +13,24 @@ table 50100 "Radio Show"
         field(110; "Audience Share"; Decimal) { }
         field(120; "Advertising Revenue"; Decimal) { }
         field(130; "Royalty Cost"; Decimal) { }
+        field(1000; Frequency; Option) { OptionMembers = Hourly,Daily,Weekly,Monthly; }
+        field(1010; "PSA Planned Quantity"; Integer) { }
+        field(1020; "Ads Planned Quantity"; Integer) { }
+        field(1030; "News Required"; Boolean) { }
+        field(1040; "News Duration"; Duration) { }
+        field(1050; "Sports Required"; Boolean) { }
+        field(1060; "Sports Duration"; Duration) { }
     }
-
     keys
     {
         key(PK; "No.") { }
-        key(Name; Name) {}
-        key(HostName; "Host Name") {}
+        key(Name; Name) { }
+        key(HostName; "Host Name") { }
 
     }
     fieldgroups
     {
-        fieldgroup(DropDown; "No.", Name, "Host Name") {}
-        fieldgroup(Brick; "No.", Name, "Audience Share") {}
+        fieldgroup(DropDown; "No.", Name, "Host Name") { }
+        fieldgroup(Brick; "No.", Name, "Audience Share") { }
     }
 }
