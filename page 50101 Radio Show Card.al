@@ -2,6 +2,8 @@ page 50101 "Radio Show Card"
 {
     PageType = Card;
     SourceTable = "Radio Show";
+    ApplicationArea = Basic;
+    UsageCategory = ReportsAndAnalysis;
 
     layout
     {
