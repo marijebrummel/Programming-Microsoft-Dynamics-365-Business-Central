@@ -1,3 +1,4 @@
 .vscode/launch.json
 .alpackages/*
 *.app
+_deploy.ps1
