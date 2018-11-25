@@ -16,8 +16,8 @@
   "platform": "12.0.0.0",
   "application": "12.0.0.0",
   "idRange": {
-    "from": 50000,
-    "to": 99999
+    "from": 50100,
+    "to": 50149
   },
   "runtime": "2.0"
 }
