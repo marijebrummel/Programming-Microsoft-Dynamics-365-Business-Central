@@ -1,6 +1,7 @@
 query 50100 "Lot Avail. by Bin"
 {
     QueryType = Normal;
+
     elements
     {
         dataitem(Item_Ledger_Entry; "Item Ledger Entry")
