@@ -25,7 +25,7 @@ page 50100 "Radio Show List"
                 field("Royalty Cost"; "Royalty Cost") { ApplicationArea = Basic; }
 
             }
-            
+
         }
         area(FactBoxes)
         {
@@ -40,14 +40,15 @@ page 50100 "Radio Show List"
     {
         area(Processing)
         {
-            group(s)
-            {
-                action(x)
-                {
-                    
-                }
-            }
 
+            action(Init)
+            {
+                Caption = 'Init';
+                RunObject = codeunit "Radio Extension Init";
+
+            }
         }
+
+
     }
 }
