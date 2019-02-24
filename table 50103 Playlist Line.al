@@ -16,9 +16,26 @@ table 50103 "Playlist Line"
         field(30; "Data Format"; Option) { OptionMembers = ,Vinyl,CD,MP3,PSA,Advertisement; }
         field(40; "Publisher Code"; Code[10]) { }
         field(50; Description; Text[50]) { }
-        field(60; Duration; Duration) { }
-        field(70; "Start Time"; Time) { }
-        field(80; "End Time"; Time) { }
+        field(60; Duration; Duration)
+        {
+            Editable = false;
+        }
+        field(70; "Start Time"; Time)
+        {
+            trigger OnValidate()
+            begin
+                if Duration <> 0 then
+                    "End Time" := "Start Time" + Duration;
+            end;
+        }
+        field(80; "End Time"; Time)
+        {
+            trigger OnValidate()
+            begin
+                if "Start Time" <> 0T then
+                    Duration := "End Time" - "Start Time";
+            end;
+        }
     }
 
     keys

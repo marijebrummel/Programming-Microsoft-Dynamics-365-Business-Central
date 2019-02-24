@@ -21,8 +21,6 @@ page 50101 "Radio Show Card"
             }
             group(Requirements)
             {
-                field("PSA Planned Quantity"; "PSA Planned Quantity") { ApplicationArea = Basic; }
-                field("Ads Planned Quantity"; "Ads Planned Quantity") { ApplicationArea = Basic; }
                 field("News Required"; "News Required") { ApplicationArea = Basic; }
                 field("News Duration"; "News Duration") { ApplicationArea = Basic; }
                 field("Sports Required"; "Sports Required") { ApplicationArea = Basic; }

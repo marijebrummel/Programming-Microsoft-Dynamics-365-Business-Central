@@ -7,6 +7,7 @@ codeunit 50148 "Radio Extension Init"
         CreateRadioShowType();
         CreatePlayList();
         CreateFan();
+
     end;
 
     procedure CreateRadioShows()
