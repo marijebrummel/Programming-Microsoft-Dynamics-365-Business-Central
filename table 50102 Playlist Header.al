@@ -38,7 +38,16 @@ table 50102 "Playlist Header"
             end;
 
         }
-        field(60; "End Time"; Time) { }
+        field(60; "End Time"; Time)
+        {
+            trigger OnValidate()
+            var
+                Text001: TextConst ENU = 'must be greater than Start Time';
+            begin
+                IF "End Time" <= "Start Time" THEN
+                    FIELDERROR("End Time", Text001);
+            end;
+        }
         field(1010; "PSAs Required"; Boolean) { }
         field(1011; "PSA Count"; Integer)
         {
