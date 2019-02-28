@@ -44,8 +44,9 @@ table 50102 "Playlist Header"
             var
                 Text001: TextConst ENU = 'must be greater than Start Time';
             begin
+                TestField("End Time");
                 IF "End Time" <= "Start Time" THEN
-                    FIELDERROR("End Time", Text001);
+                    FIELDERROR("End Time");//, Text001);
             end;
         }
         field(1010; "PSAs Required"; Boolean) { }
