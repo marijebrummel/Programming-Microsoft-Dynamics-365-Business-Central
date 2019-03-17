@@ -24,4 +24,5 @@ codeunit 50100 "Run XMLPort"
         OutStream: OutStream;
         FromFileName: Text;
         ToFileName: Variant;
+        x: XmlPort 9170;
 }

@@ -1,49 +1,54 @@
-// xmlport 50100 "WDTU XMLPort"
-// {
-//     Format = FixedText;
+XmlPort 50100 "Ratings Import"
+{
+    UseDefaultNamespace = true;
 
-//     schema
-//     {
-//         textelement(NodeName1)
-//         {
-//             tableelement(NodeName2; SourceTableName)
-//             {
-//                 fieldattribute(NodeName3; NodeName2.SourceFieldName)
-//                 {
+    schema
+    {
+        textelement(Root)
+        {
+            MaxOccurs = Once;
+            tableelement(ListenershipEntries; "Listernership Entry")
+            {
+                MinOccurs = Zero;
+                XmlName = 'RatingsData';
+                fieldelement(EntryNo; ListenershipEntries."Entry No.")
+                {
+                }
+                fieldelement(Date; ListenershipEntries.Date)
+                {
+                }
+                fieldelement(StartTime; ListenershipEntries."Start Time")
+                {
+                }
+                fieldelement(EndTime; ListenershipEntries."End Time")
+                {
+                }
+                fieldelement(RadioShowID; ListenershipEntries."Radio Show No.")
+                {
+                }
+                fieldelement(Listeners; ListenershipEntries."Listener Count")
+                {
+                }
+                fieldelement(Audience; ListenershipEntries."Audience Share")
+                {
+                }
+                fieldelement(Age; ListenershipEntries."Age Demographic")
+                {
+                }
+            }
+        }
+    }
 
-//                 }
-//             }
-//         }
-//     }
+    requestpage
+    {
 
-//     requestpage
-//     {
-//         layout
-//         {
-//             area(content)
-//             {
-//                 group(GroupName)
-//                 {
-//                     field(Name; SourceExpression)
-//                     {
+        layout
+        {
+        }
 
-//                     }
-//                 }
-//             }
-//         }
+        actions
+        {
+        }
+    }
+}
 
-//         actions
-//         {
-//             area(processing)
-//             {
-//                 action(ActionName)
-//                 {
-
-//                 }
-//             }
-//         }
-//     }
-
-//     var
-//         myInt: Integer;
-// }
