@@ -53,6 +53,8 @@ table 50100 "Radio Show"
     trigger OnDelete()
     var
         x: page 9006;
+        y: page "SO Processor Activities";
+        z: Record "My Item";
     begin
 
     end;

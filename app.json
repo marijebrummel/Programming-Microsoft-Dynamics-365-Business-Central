@@ -11,14 +11,13 @@
   "url": "",
   "logo": "",
   "capabilities": [],
-  "dependencies": [],
+  "dependencies": [{"appId": "437dbf0e-84ff-417a-965d-ed2bb9650972","name": "BaseApp","publisher": "Microsoft","version": "14.0.0.0"}],
   "screenshots": [],
-  "platform": "12.0.0.0",
-  "application": "12.0.0.0",
+  "platform": "14.0.0.0",
   "idRange": {
     "from": 50100,
     "to": 50149
   },
-  "runtime": "2.0",
+  "runtime": "3.0",
   "showMyCode": true
 }
