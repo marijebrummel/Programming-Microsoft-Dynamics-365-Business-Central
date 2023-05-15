@@ -6,17 +6,14 @@
   "description": "",
   "version": "1.0.0.0",
   "privacyStatement": "",
-  "EULA": "",
-  "help": "",
-  "url": "",
-  "logo": "",
-  "capabilities": [],
   "dependencies": [],
   "screenshots": [],
-  "platform": "12.0.0.0",
-  "application": "12.0.0.0",
-  "idRange": {
+  "platform": "1.0.0.0",
+  "application": "20.0.0.0",
+  "idRanges": [{
     "from": 50000,
     "to": 99999
-  }
+  }],
+  "target": "Cloud",
+  "runtime": "11.0"
 }
